@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylestest2.css">
+
+
+</head>
+<body>
+
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Iphone')">Iphone</button>
+    <button class="tablinks" onclick="openCity(event, 'Samsung')">Samsung</button>
+    <button class="tablinks" onclick="openCity(event, 'Huaweii')">Huawei</button>
+</div>
+
+<div id="Iphone" class="tabcontent">
+    <h3>Iphone</h3>
+    <p>It's are affordable mobile phones</p>
+
+    <div class="Products">
+        <div class="container1">
+            <button id="Iphone14">Iphone 14</button>
+            <button id="Iphone13">Iphone 13</button>
+            <button id="Iphone12">Iphone 12</button>
+        </div>
+
+        <div content="container2">
+            <h1 class="text"></h1>
+            <p class="Characters"></p>
+            <a href="#" class="Buy"></a>
+        </div>
+    </div>
+</div>
+<div id="Samsung" class="tabcontent">
+    <h3>Samsung</h3>
+    <p>It's are affordable mobile phones</p>
+
+    <button id="SamsungA53">Samsung A53</button>
+    <div content="container2">
+        <h1 class="text2"></h1>
+        <p class="Characters2"></p>
+        <a href="#" class="Buy2"></a>
+    </div>
+</div>
+<div id="Huaweii" class="tabcontent">
+    <h3>Huawei</h3>
+    <p>It's are affordable mobile phones</p>
+    <button id="Huawei">Huawei Nova Y90</button>
+    <div content="container2">
+        <h1 class="text3"></h1>
+        <p class="Characters3"></p>
+        <a href="#" class="Buy3"></a>
+    </div>
+</div>
+
+<div id="modal2" class="container">
+
+    <div class="header">
+        <h2>Ordering</h2>
+    </div>
+
+    <form id="form" class="form">
+        <div class="form-control">
+            <label for="username">Username</label>
+            <input type="text" placeholder="florinpop17" id="username" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+            <p id="ptest"></p>
+        </div>
+
+        <div class="form-control">
+            <label for="username">Email</label>
+            <input type="email" placeholder="a@florin-pop.com" id="email" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+        </div>
+
+        <div class="form-control" >
+            <label for="myList">City</label>
+            <select id = "myList" onchange = "favTutorial()" >
+                <option> ---Choose city--- </option>
+                <option> Kiev </option>
+                <option> Kharkiv </option>
+                <option> Odessa </option>
+                <option> Lviv </option>
+            </select>
+            <p> Your selected city:
+                <input type = "text" id = "favourite" size = "20"> </p>
+        </div>
+
+        <div class="form-control">
+            <div class="popup" onclick="myFunction()">
+                <label for="city">Warehouse - click on my!</label>
+                <span class="popuptext" id="myPopup">Только новая почта</span>
+            </div>
+            <input type="text" placeholder="Enter warehouse" id="city" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+        </div>
+
+        <div class="form-control" >
+            <p>Select your size:</p>
+            <div id="group">
+            </div>
+            <p id="output"></p>
+        </div>
+
+        <div class="form-control" >
+            <p>Comment:</p>
+            <textarea id="textareabox" name="textarea1" placeholder="Start here..."></textarea>
+            <p id="text-area"></p>
+            <p id="text-area-succes"></p>
+            <input type="button" id="submit" value="Get Text" onclick="getText()" />
+        </div>
+
+
+        <div class="form-control">
+            <table class="rwd-table">
+                <p>Price:</p>
+                <tr>
+                    <td data-th="price">USD 1400.00</td>
+                    <td data-th="quantity"><input type="number" id="iphone14_1" value="0" placeholder="Enter Quantity"/></td>
+                </tr>
+            </table>
+            <input  type="button" class="buttonnn" value="Get Price" onclick="total()" />
+
+            <div class="result" id="total_cost" style="margin-left:40px;">USD 0.00</div>
+        </div>
+
+        <button id="btn">Submit</button>
+
+    </form>
+</div>
+
+<script src="main.js"></script>
+<script src="indextest2.js"></script>
+</body>
+</html>
